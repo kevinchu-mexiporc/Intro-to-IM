@@ -57,12 +57,16 @@ function draw() {
   line(200,280,130,260)
   line(130,260,135,300)
   
+  line(75,80,75,0)
+  line(325,80,325,0)
+  line(105,230,105,0)
+  line(25,145,25,0)
+  line(375,145,375,0)
+  
   arc(200,130,50,20,0,PI)
   fill(0)
   arc(200,55,120,100,PI,0)
   fill(220)
   noStroke()
   triangle(220,50,215,55,225,55)
-  
-  print(mouseX,mouseY)
 }
