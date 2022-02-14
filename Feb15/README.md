@@ -76,4 +76,4 @@ function draw() {
 ````
 ### Problems and Challenges
 I overcame a challenge from last assignment, which is to figure out how to reset the translate function back to (0,0) and assign a new spot I want it to be.
-However, I still ran into other problems in this assignment. I am a bit confused of the generation of randomness in the program. The random number it produced does not seem that random to me but just select a random number at first and stick to that number instead of regenerate it.
+However, I still ran into other problems in this assignment. I am a bit confused of the generation of randomness in the program. The random number it produced does not seem that random to me but just select a random number at first and stick to that number instead of regenerate it. I kind of just get alone with it this time since the proble did not really bother me that much but just did not allow me to do the ideal thing i was imagining in my head.
