@@ -2,9 +2,13 @@
 ## Wall-Series
 ### Below is a series of random generated curves assigned in an array covering the whole canva.
 ![Wall-1](Wall1.png)
+
 ![Wall-2](Wall2.png)
+
 ![Wall-3](Wall3.png)
+
 ![Wall-4](Wall4.png)
+
 ![Wall-5](Wall5.png)
 ### Code
 ````
