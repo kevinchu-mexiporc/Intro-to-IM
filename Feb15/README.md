@@ -1,12 +1,12 @@
-### Generative Artwork Using Object-Oriented Programming(OOP)
+# Generative Artwork Using Object-Oriented Programming(OOP)
 ## Wall-Series
-# Below is a series of random generated curves assigned in an array covering the whole canva.
+### Below is a series of random generated curves assigned in an array covering the whole canva.
 ![Wall-1](Wall1.png)
 ![Wall-2](Wall2.png)
 ![Wall-3](Wall3.png)
 ![Wall-4](Wall4.png)
 ![Wall-5](Wall5.png)
-# Code
+### Code
 ````
 let Currrrves = []; //set the array for later use
 
@@ -70,6 +70,6 @@ function draw() {
   }
 }
 ````
-# Problems and Challenges
+### Problems and Challenges
 I overcame a challenge from last assignment, which is to figure out how to reset the translate function back to (0,0) and assign a new spot I want it to be.
 However, I still ran into other problems in this assignment. I am a bit confused of the generation of randomness in the program. The random number it produced does not seem that random to me but just select a random number at first and stick to that number instead of regenerate it.
