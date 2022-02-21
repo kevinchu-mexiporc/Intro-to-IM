@@ -7,10 +7,10 @@
  * Source: https://www.kaggle.com/datasets
  */
 
-// An array of strings to hold the entire CSV file
+// An array to hold the entire CSV file
 let strings = [];
 
-// For scaling the locations of each earthquake into the canvas, we catch the minimum and maximum latitude and longitude
+// For scaling the locations of each earthquake into the canvas, I catch the minimum and maximum latitude and longitude
 let minLat;
 let maxLat;
 let minLong;
