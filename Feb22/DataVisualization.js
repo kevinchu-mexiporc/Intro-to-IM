@@ -2,7 +2,7 @@
 /*
  * process a data visualization
  * about earthquakes happening in Greece
- * the CSV file data includes 
+ * the CSV file data includes
  * the Lat, the Long, the depth, and the magnitude of each earthquake
  * Source: https://www.kaggle.com/datasets
  */
@@ -79,7 +79,7 @@ function findMinMaxLatLong() {
   print("Longitude (min, max) = (" + minLong + "," + maxLong + ")");
 } // end of findMinMaxLatLong
 
-let csvRowNumber = 0
+let csvRowNumber = 0;
 //I delete the header of the file so I will just start it from 0
 
 function draw() {
@@ -105,10 +105,13 @@ function draw() {
 
     noStroke();
     // Put a mark there
-    if(depth>5){fill(200/depth +220);}
-    else{fill(0)}
-    
-    circle(xpos, ypos, magnitude*13);
+    if (depth > 5) {
+      fill(200 / depth + 220);
+    } else {
+      fill(0);
+    }
+
+    circle(xpos, ypos, magnitude * 13);
   } // end of valid data
 
   csvRowNumber++;
@@ -117,4 +120,5 @@ function draw() {
     noLoop();
   }
 }
+
 ````
