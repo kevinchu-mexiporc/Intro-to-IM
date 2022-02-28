@@ -1,6 +1,6 @@
 # Midterm Project Journal - Chicken Attack
 ## Initial Concept:
-Since violent games are banned, I want to construct a weirdly satisfying and humurous game instead. The idea in my head is originned from a game I played with my friends when I was little which is called **"eagle catches chicks." ** I rename the game with a funny song called **"Chicken Attack."**
+Since violent games are banned, I want to construct a weirdly satisfying and humurous game instead. The idea in my head is originned from a game I played with my friends when I was little which is called **"eagle catches chicks."** I rename the game with a funny song called **"Chicken Attack."**
 
 I am not sure if there is such game in other regions, but the game is about a person plays as a ham protecting other players playing as her chicks lining up behind her from the opponent player in the role of eagle. To avoid the potential violence of the game and to make the game even cuter, I decided to let the player proect eggs from the raindrops. There will be one ham in the frame walking and laying egges randomly, and the mission for the player wll be controlling a brick above them to protect the eggs from the keep randomly generating raindrops.
 
