@@ -22,5 +22,6 @@ The game comes to the end when the player failed to protect 5 eggs from the rain
 The potential challenges I can think of now is mostly the construstion of a randomly moving objects all together and the image transformation from an egg to a chick when the eggs are cracked. Also, how the chicks are going to fade or disappear on the screen when they are born is another concern. The more technical problems will be the formation of the eggs when the ham lays them randomly.
 
 ## Solutions to Potential Problems:
+I will first do the first version of the code to see if these are really problems.
 
 ## Behind The Scene:
