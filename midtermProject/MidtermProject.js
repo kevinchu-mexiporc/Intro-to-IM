@@ -1,4 +1,3 @@
-````
 //////////A function to preload the images i used in the game/////////
 function preload() {
   rain = loadImage("Rain.png");
@@ -239,4 +238,3 @@ function mouseClicked() {
     loop();
   }
 }
-````
