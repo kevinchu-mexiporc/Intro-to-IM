@@ -10,3 +10,6 @@
 
 ## Elements in the Game:
 
+## Part I Think I Do Well:
+
+## Testers' Reviews:
