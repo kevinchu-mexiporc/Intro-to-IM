@@ -58,7 +58,10 @@ I genunly think I do pretty well on being cosistent to the vibe of the game. The
 
 ## Testers' Reviews:
 
-https://user-images.githubusercontent.com/98512579/157303291-693e3994-b0e4-41c6-8262-e71ffcb4fde8.MOV
+
+
+https://user-images.githubusercontent.com/98512579/157304775-ed4c7c6e-e556-4b00-86a2-28b2f8572f0f.MOV
+
 
 
 
