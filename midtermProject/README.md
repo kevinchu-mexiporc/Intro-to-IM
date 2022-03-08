@@ -8,3 +8,5 @@
 
 ## Game display:
 
+## Elements in the Game:
+
