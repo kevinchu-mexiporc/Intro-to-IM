@@ -75,5 +75,5 @@ I have not added the background and the sound to the game. I am thinking about u
 I added the song "Chicken Attack" as background music, the explode sound when a raindrop collide with an egg, and a rooster sound when an egg hatches.
 
 ## Behind The Scene:
-![sketch -46](https://user-images.githubusercontent.com/98512579/157279333-d10894a7-22fc-4a74-a91d-840fee9fa347.jpg width=50% height=50%)
+<img src=https://user-images.githubusercontent.com/98512579/157279333-d10894a7-22fc-4a74-a91d-840fee9fa347.jpg width=50% height=50%>
 
