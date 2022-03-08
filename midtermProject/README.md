@@ -34,7 +34,26 @@ When the game is over, the text of game over and click to restart instruction wi
 
 ## Elements in the Game:
 
+- A class for the player
+- A class for raindrops (in array)
+- A class for the eggs (in array)
+- A class for the chicks (in array)
+- A clsss for the ham
+- A class for the brick
+- Image for eggs
+- Image for chicks
+- Imake for the ham
+- Image for raindrops
+- Image for background
+- Screen text for game start instruction
+- Screen text for life and score recording purpose
+- Screen text for game over instruction
+- Background sound 
+- Sound when a raindrop touches an egg
+- Sound when a chick hatches
 
 ## Part I Think I Do Well:
+
+I genunly think I do pretty well on being cosistent to the vibe of the game. The game itself is not complex or well developed but it sure is a game that will make the player laugh (at least I laughed).
 
 ## Testers' Reviews:
