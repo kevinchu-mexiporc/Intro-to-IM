@@ -67,4 +67,8 @@ I found that the problems were all happening after the ````spliced()```` functio
 " error and the code crashed.
 
 After recognizing the problem, I rearranged the order of the code to make it more logical and check everthing that include the index before deleting the object within the arrays.
+
+### UPDATE:
+I have not added the background and the sound to the game. I am thinking about using the song "Chicken Attack" as background music and some rooster sound when a chick is hatched. Also, I want to have a weird sound when the rains drop on eggs.
+
 ## Behind The Scene:
