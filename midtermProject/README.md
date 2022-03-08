@@ -57,3 +57,11 @@ When the game is over, the text of game over and click to restart instruction wi
 I genunly think I do pretty well on being cosistent to the vibe of the game. The game itself is not complex or well developed but it sure is a game that will make the player laugh (at least I laughed).
 
 ## Testers' Reviews:
+
+https://user-images.githubusercontent.com/98512579/157303291-693e3994-b0e4-41c6-8262-e71ffcb4fde8.MOV
+This video is the best reaction among all my testers. The game is quite easy for everyone to get familiar with even without reading the instruction from the game start page. Testers did suggest I can change the platform into a character in the music video, but I found it will make the platform mix with the complex background image after trying that out. They do enjoy the game, laugh when they are playing it, and sing along with the music.
+
+## Reference:
+
+The attached link is the song: https://www.youtube.com/watch?v=miomuSGoPzI
+
