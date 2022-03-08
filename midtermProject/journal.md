@@ -24,4 +24,15 @@ The potential challenges I can think of now is mostly the construstion of a rand
 ## Solutions to Potential Problems:
 I will first do the first version of the code to see if these are really problems.
 
+### UPDATED problems:
+The potential problems turn out to be just fine. However, there were other problems happening when I worked on the project.
+- Program ended at unexpected error of undifined attributes in the rain array objects.
+- Program ended at unexpected error of undifined attributes in the egg array objects.
+- The problem of not able to increase the amount of the rain and the speed of it.
+
+### UPDATED Solutions:
+I walked through the loop to display the arrays that contain different types of classes. I found that the problems were all happening after the ````spliced()```` function was called. After it was called, any other actions that required the index within the object that was just deleted would trigger the "attribute not defined
+" error and the code crashed.
+
+After recognizing the problem, I rearranged the order of the code to make it more logical and check everthing that include the index before deleting the object within the arrays.
 ## Behind The Scene:
