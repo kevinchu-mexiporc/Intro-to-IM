@@ -72,6 +72,6 @@ After recognizing the problem, I rearranged the order of the code to make it mor
 I have not added the background and the sound to the game. I am thinking about using the song "Chicken Attack" as background music and some rooster sound when a chick is hatched. Also, I want to have a weird sound when the rains drop on eggs.
 
 ### UPDATE:
-I added the song "Chicken Attack" as background music and the explode sound when a raindrop collide with an egg.
+I added the song "Chicken Attack" as background music, the explode sound when a raindrop collide with an egg, and a rooster sound when an egg hatches.
 
 ## Behind The Scene:
