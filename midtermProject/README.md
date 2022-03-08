@@ -19,8 +19,11 @@ The game is a platform controlled by the player to protect the eggs lay by the h
 The game has the song "Chicken Attack" as the background music that will keep looping before the player exit the game (which is very annoying i have to admit). This is the soul of the whole game, the trolling vibe. To be consistent to the trolling vibe I selected the images of the ham, the eggs, the raindrops, and the chicks all from the emoji library. Also, the background image is the set of the most classic scene in the "Chicken Attack" music video. When a chick hatches from the egg, a rooster sound will play to make the game funnier and to let players get an instant notice that they got a point. On the other hand, a explode sound will play when a raindrop hits an egg to let players know their chickens are facing an attack.
 
 ## Game display:
-![The game start interface](start.png| width=360px height=560px)
+
+<img width="361" alt="start" src="https://user-images.githubusercontent.com/98512579/157275644-bab53e43-6e6d-4251-87d3-ebce9cbcf2f7.png" width=50% height=50%>
+
 ## Elements in the Game:
+
 
 ## Part I Think I Do Well:
 
