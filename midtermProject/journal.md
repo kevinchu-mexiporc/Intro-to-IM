@@ -31,7 +31,39 @@ The potential problems turn out to be just fine. However, there were other probl
 - The problem of not able to increase the amount of the rain and the speed of it.
 
 ### UPDATED Solutions:
-I walked through the loop to display the arrays that contain different types of classes. I found that the problems were all happening after the ````spliced()```` function was called. After it was called, any other actions that required the index within the object that was just deleted would trigger the "attribute not defined
+I walked through the loop to display the arrays that contain different types of classes. 
+
+#### Eg. Rain array loop
+````
+ for (let i = 0; i < Rain.length; i++) {
+    Rain[i].display();
+    if (Rain[i].y > 600 || Rain[i].block(brick.x, brick.y) == true) {
+      Rain.splice(i, 1);
+    }
+  }
+````
+
+#### Eg. Egg array loop
+````
+for (let i = 0; i < Egg.length; i++) {
+    Egg[i].display();
+    Egg[i].timer++;
+    for (let j = 0; j < Rain.length; j++) {
+      if (Rain[j].clash(Egg[i].x, Egg[i].y) == true) {
+        Egg[i].lose_life();
+      }
+    }
+    if (Egg[i].timer == 1000) {
+      Chick.push(new Chicks(Egg[i].x, Egg[i].y));
+      Egg.splice(i, 1);
+      player.get_point();
+    } else if (Egg[i].life == 0) {
+      Egg.splice(i, 1);
+      player.lose_life();
+    }
+  }
+````
+I found that the problems were all happening after the ````spliced()```` function was called. After it was called, any other actions that required the index within the object that was just deleted would trigger the "attribute not defined
 " error and the code crashed.
 
 After recognizing the problem, I rearranged the order of the code to make it more logical and check everthing that include the index before deleting the object within the arrays.
