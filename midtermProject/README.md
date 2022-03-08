@@ -22,6 +22,10 @@ The game has the song "Chicken Attack" as the background music that will keep lo
 
 <img width="361" alt="start" src="https://user-images.githubusercontent.com/98512579/157275644-bab53e43-6e6d-4251-87d3-ebce9cbcf2f7.png" width=50% height=50%>
 
+<img width="358" alt="while" src="https://user-images.githubusercontent.com/98512579/157275855-22bf9a4b-6e57-45a1-855d-a31833358928.png" width=50% height=50%>
+
+<img width="360" alt="end" src="https://user-images.githubusercontent.com/98512579/157275964-959d1218-4377-448a-8681-8a4a241c7cbb.png" width=50% height=50%>
+
 ## Elements in the Game:
 
 
