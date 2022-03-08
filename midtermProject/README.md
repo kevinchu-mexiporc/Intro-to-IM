@@ -20,11 +20,17 @@ The game has the song "Chicken Attack" as the background music that will keep lo
 
 ## Game display:
 
+### The game start interface:
 <img width="361" alt="start" src="https://user-images.githubusercontent.com/98512579/157275644-bab53e43-6e6d-4251-87d3-ebce9cbcf2f7.png" width=50% height=50%>
+There will have a block of simple instruction in the beginning of the game, and the game should be easy to explore even with very brief rule explaining.
 
+### The game on interface:
 <img width="358" alt="while" src="https://user-images.githubusercontent.com/98512579/157275855-22bf9a4b-6e57-45a1-855d-a31833358928.png" width=50% height=50%>
+When the game is on, the instruction block will disappear and the score and life block will appear in the top right corner.
 
+### The game over interface:
 <img width="360" alt="end" src="https://user-images.githubusercontent.com/98512579/157275964-959d1218-4377-448a-8681-8a4a241c7cbb.png" width=50% height=50%>
+When the game is over, the text of game over and click to restart instruction will appear.
 
 ## Elements in the Game:
 
