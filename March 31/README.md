@@ -4,7 +4,7 @@
 This switch is very starght forward. It turns on th led when the environment is dark and turn off the led when the environment is bright. 
 
 ## Process:
-The first idea I had is to create a switch that will turn on the led when my eyes open, which means the moment I wake up. and I later thought of this is actually just the same as controlling the led with light. I saw there is a photoresistor in the arduino package we picked up, so I include it into my circuit to sense the brightness of the environment. To decide what is a "dark" environment, I used the serial monitor to detect the data when the light is off and assign that turn on the led if the parameter is below a certain number. I can also change the operator into greater than that certain number to turn on the led when it is bright.
+The first idea I had is to create a switch that will turn on the led when my eyes open, which represents the moment I wake up. and I later thought of this is actually just the same as controlling the led with light. I saw there is a photoresistor in the arduino package we picked up, so I include it into my circuit to sense the brightness of the environment. To decide what is a "dark" environment, I used the serial monitor to detect the data when the light is off and assign that turn on the led if the parameter is below a certain number. I can also change the operator into greater than that certain number to turn on the led when it is bright.
 
 ## Video:
 
