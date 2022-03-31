@@ -11,6 +11,8 @@ The first idea I had is to create a switch that will turn on the led when my eye
 https://user-images.githubusercontent.com/98512579/160830843-cdf407e6-8360-4ec0-a496-f11cff0df0f5.MOV
 
 
+![IMG_8428](https://user-images.githubusercontent.com/98512579/160988000-1310595e-45c8-40c3-ad73-8a19e95d1ed3.jpg)
+![IMG_8429](https://user-images.githubusercontent.com/98512579/160988011-30b3ae85-0cad-4c8f-a265-8f849a96e165.jpg)
 
 ## Problem:
 I haven't done the traing at the IM lab, so I am not sure if I have the full access to it so I tried to make the switch work with what I already have with me. I will attend the training as soon as possible to get more materials in hands.
