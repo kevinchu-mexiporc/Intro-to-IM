@@ -20,3 +20,4 @@ the variable to change the mode. In the end, the idea is to create a piano that 
 
 Testing video link: https://youtube.com/shorts/bjXEBUlf0RA?feature=share
 ## Schematic:
+![im0412-68](https://user-images.githubusercontent.com/98512579/162812141-ca74929d-421e-4aef-94c5-eb8a3c2146c0.jpg)
