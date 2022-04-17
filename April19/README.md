@@ -8,4 +8,4 @@
 ## Ex.3:
 ### take the gravity wind example and make it so every time the ball bounces one led lights up and then turns off, and you can control the wind from one analog sensor
 #### Link to p5.js sketch: https://editor.p5js.org/kevinchu-mexiporc/sketches/3Vd2k_fCV
-#### Link ex3 video:
+#### Link ex3 video: https://youtube.com/shorts/AqmoP3S5bDU?feature=share
