@@ -8,7 +8,7 @@ I had a lot of ideas crossed my mind when I was brainstorming about the final pr
 (2022/04/17) 
 The Social Distancing system will basically be a device that keeps avoiding people from touching it, which will be controlled by the Arduino platform. Meanwhile, the P5js interface will showcase where are the people approaching from. The iterface will bright up at four edges in different colors and frequencies to represent the distance in between the device and the approaching person. When the signal at the edges is lighting up in red and higher frequency, it means the distance between the person and the item is too close. On the other hand, when the light is in green and lower frequency, it means it is in the acceptable range. Back to the device itself, it will be a pole that can lean into four different directions that will be controlled by a combination of two servo motors. One of the servo motors will controll the pole to move in frontward and backward direction. while another servo motor will controll the pole to move in leftward and rightward directions. To detect the distance between the approaching person and the pole, I will have four ultrasonic sensors attached to the pole in four different directions. In this way, the system can have the data of which direction is the person approaching. I also want to make the system more engaging, so I am still thinking what else can the device give as feebacks to the user. I will probably add the speaker to it(?
 
-(2022/04/17)
+(2022/04/21)
 I will add leds(maybe neon)to visualize the distance by different colors. For the speaker part, I will take the advice from professor to play the sound from the p5js edge, I think i will not add a speaker to the device.
 
 ## P5js elements:
