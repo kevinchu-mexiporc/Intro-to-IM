@@ -15,6 +15,7 @@ I will add leds(maybe neon)to visualize the distance by different colors. For th
   - Four classes of light on different edges
     - Methods to controll shining frequency and color
   - A class to receive data from the Arduino
+  - A function for sound display
 
 ## Arduino elements:
   - Analog input of ultrasonic sensors
@@ -27,4 +28,15 @@ I will add leds(maybe neon)to visualize the distance by different colors. For th
   - Bread board and circuts
   - A speaker(X
   - Some leds
+
+## P5js Progress:
+(2022/04/26)
+I did the basic data spliting and reading from the Arduino end, and I decided to use pixels to create the lights on edges in different colors according to the distance between the user and the device.
+
+## Arduino Progress:
+(2022/04/26)
+I set up the basic input and output pinmode according the functions I need supported by different pin on the Arduino Uno board. I have not started the hardware setup yet.
+
 ## Problems & corresponding solutions:
+(2022/04/26)
+The hardware design is more of a problem to me, and I need to spend extra time to get used to what can I do in the IM lab to achive the design in my head. I will try to visualize my design by drawing it down and reach out to Jack for help. Also, I am still trying to figur out what kind of design should I adapt for the P5js display window by using pixels. The pixels are not really displaying in the way I expect them to. So, I will need to spend extra time to think of how to make them work properly.
