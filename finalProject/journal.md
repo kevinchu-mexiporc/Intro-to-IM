@@ -23,8 +23,8 @@ I will add leds(maybe neon)to visualize the distance by different colors. For th
   - Analog output to controll the speaker(X
   - Digital output of leds
   - A pole
-  - Four ultrasonic sensors
-  - Two servo motors
+  - Four ultrasonic sensors -> Four IR distance sensors (2022/05/05)
+  - Two servo motors(continuous rotation)
   - Bread board and circuts
   - A speaker(X
   - Some leds
@@ -33,10 +33,15 @@ I will add leds(maybe neon)to visualize the distance by different colors. For th
 (2022/04/26)
 I did the basic data spliting and reading from the Arduino end, and I decided to use pixels to create the lights on edges in different colors according to the distance between the user and the device.
 
+(2022/05/10)
+I now can get the serial input from the arduino properly, and I decided to change the color display into the area of four colored bars on four edges of the window. In this way, there will be more interaction between the user and the device. However, I am struggling with the mapping just like the problems I faced when building up the Arduino system. I am thinking of changing the inputs from the Arduino through an equation to map them more precisely, or maybe I will pick up the same startegy as what I did to my Arduino, which is to alter the variables that control the area boundaries a bit at a time.
+
 ## Arduino Progress:
 (2022/04/26)
 I set up the basic input and output pinmode according the functions I need supported by different pin on the Arduino Uno board. I have not started the hardware setup yet.
 
-## Problems & corresponding solutions:
 (2022/04/26)
 The hardware design is more of a problem to me, and I need to spend extra time to get used to what can I do in the IM lab to achive the design in my head. I will try to visualize my design by drawing it down and reach out to Jack for help. Also, I am still trying to figur out what kind of design should I adapt for the P5js display window by using pixels. The pixels are not really displaying in the way I expect them to. So, I will need to spend extra time to think of how to make them work properly.
+
+(2022/05/10)
+This is the update for yesterday. I worked on the hardwares for an amount of time to connect two servo motors together, to connect the IR distance sensors to the device, and to connect all the wires and circuits. I was trying to debugging the servo motors I was using and found out they were actually continuous rotation motors, which I could not assign specific angle or turning speed to them. To fix the problem, I ended up using the micro servos from the kit, which are able to write to specific positions. Also, the mapping of distance reading to the angle of the servo motors ended up to be too sensitive, which is not what I imagined in my head. So, to make the servo motors to turn in a more calming way, I made the positions of the motors to change in a small amount whenever the detected distance is too close. Another problem I am facing now is that two out of four sensors are not giving very stable feedbacks, which I guess might due to the fact that I am powering the system with my Arduino, which I will try to fix with supplying the power from the external source.
