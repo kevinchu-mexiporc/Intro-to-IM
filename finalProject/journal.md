@@ -189,4 +189,8 @@ averageBack = totalBack / numReadings;
 averageLeft = totalLeft / numReadings;
 // send it to the computer as ASCII digits
   ```
+Here is how it looks like in the end:
+![IMG_9524 Small](https://user-images.githubusercontent.com/98512579/167920325-4c82edae-6d38-4db2-b83e-93c46367e5c2.jpeg)
+The version after getting a cover on top the circuits:
+![IMG_9525 Small](https://user-images.githubusercontent.com/98512579/167920538-b087a4ba-7b0c-496f-9878-ed55699af204.jpeg)
 
