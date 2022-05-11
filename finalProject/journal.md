@@ -39,6 +39,29 @@ I now can get the serial input from the arduino properly, and I decided to chang
 (2022/05/10)
 I adjusted the code to another method instead of mapping the serial inputs to other variables in p5. I changed the mapping into comparing the previos readings from the serial to the new readings, and increase or decrease the lighting area of the pixels according to the difference of the two readings.
 
+(2022/05/10)
+The previous method of increasing or decreasing the lighting area of the pixels according to the difference of the two readings still have some glitches at the right and back edges. Those two bar areas of pixels sometimes even do not show at all. I later tried to use ```rotate()``` to see if I can start to fill up the pixel array in four different directions, but the idea failed. In the end, I figured out I should fill the pixel backward instead of in order to make sure the last parts of the array will always be filled up despite any scenario as I show in the followong code.
+```
+for (y = 0; y < height; y++) {
+    for (x = 400; x > rightPos; x = x - 2) {
+      let index = (x + y * width) * 4;
+      pixels[index + 0] = 255;
+      pixels[index + 1] = random(255);
+      pixels[index + 2] = 255;
+      pixels[index + 3] = 255;
+    }
+  }
+  for (y = height; y > backPos;  y = y - 2) {
+    for (x = 0; x < width; x++) {
+      let index = (x + y * width) * 4;
+      pixels[index + 0] = 255;
+      pixels[index + 1] = random(255);
+      pixels[index + 2] = 255;
+      pixels[index + 3] = 255;
+    }
+  }
+```
+
 ## Arduino Progress:
 (2022/04/26)
 I set up the basic input and output pinmode according the functions I need supported by different pin on the Arduino Uno board. I have not started the hardware setup yet.
@@ -52,7 +75,7 @@ This is the update for yesterday. I worked on the hardwares for an amount of tim
 (2022/05/10)
 Since the sensors and motors I borrowed from the IM lab are all different from what we have in our kit, I had to make sure how they work properly. 
 For the Sharp IR distance sensors model GP2Y0A02YK0F, I found several zip library online and decided to pick up the SharpIR files provided by guillaume-rico on the gitHub. 
-Following is the link: https://github.com/guillaume-rico/SharpIR
+Following is the link: (https://github.com/guillaume-rico/SharpIR)
 This basically fix all my problems of interpreting the analog input I get from the sensors into the distacnce unit of cenimeters. The other problem regarding the sensors is that two out of four sesors always return very unstable values, and I guessed they might be affected the noises when connecting Arduino as a controller and a power source at the same time. So, I borrowed a 5v power plug from the IM lab, and power the device directly from the external source. After doing this, the values returned by all four sensors are a lot more stable. To make the returned values even more stable, I added a capacitor to the circuit, implied a smoothing method to my Arduino code to smooth the values collected by the sensors by taking the averages of ten values, and added a delay(1) to stable the readings while not stopping the code for too long.
 
 
