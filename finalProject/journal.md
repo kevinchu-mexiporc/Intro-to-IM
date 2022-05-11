@@ -46,7 +46,10 @@ The hardware design is more of a problem to me, and I need to spend extra time t
 (2022/05/10)
 This is the update for yesterday. I worked on the hardwares for an amount of time to connect two servo motors together, to connect the IR distance sensors to the device, and to connect all the wires and circuits. I was trying to debugging the servo motors I was using and found out they were actually continuous rotation motors, which I could not assign specific angle or turning speed to them. To fix the problem, I ended up using the micro servos from the kit, which are able to write to specific positions. Also, the mapping of distance reading to the angle of the servo motors ended up to be too sensitive, which is not what I imagined in my head. So, to make the servo motors to turn in a more calming way, I made the positions of the motors to change in a small amount whenever the detected distance is too close. Another problem I am facing now is that two out of four sensors are not giving very stable feedbacks, which I guess might due to the fact that I am powering the system with my Arduino, which I will try to fix with supplying the power from the external source.
 
-Search on sensors and motors
-external power source
-capacitor
+(2022/05/10)
+Since the sensors and motors I borrowed from the IM lab are all different from what we have in our kit, I had to make sure how they work properly. 
+For the Sharp IR distance sensors model GP2Y0A02YK0F, I found several zip library online and decided to pick up the SharpIR files provided by guillaume-rico on the gitHub. 
+Following is the link: https://github.com/guillaume-rico/SharpIR
+This basically fix all my problems of interpreting the analog input I get from the sensors into the distacnce unit of cenimeters. The other problem regarding the sensors is that two out of four sesors always return very unstable values, and I guessed they might be affected the noises when connecting Arduino as a controller and a power source at the same time. So, I borrowed a 5v power plug from the IM lab, and power the device directly from the external source. After doing this, the values returned by all four sensors are a lot more stable. To make the returned values even more stable, I added a capacitor to the circuit, implied a smoothing method to my Arduino code to smooth the values collected by the sensors by taking the averages of ten values, and added a delay(1) to stable the readings while not stopping the code for too long.
+
 
