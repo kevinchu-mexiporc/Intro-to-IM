@@ -12,22 +12,22 @@ The Social Distancing system will basically be a device that keeps avoiding peop
 I will add leds(maybe neon)to visualize the distance by different colors. For the speaker part, I will take the advice from professor to play the sound from the p5js edge, I think i will not add a speaker to the device.
 
 ## P5js elements:
-  - Four classes of light on different edges
+  - Four classes of light on different edges -> pixels controlled by a single function
     - Methods to controll shining frequency and color
   - A class to receive data from the Arduino
-  - A function for sound display
+  - A function for sound display(?
 
 ## Arduino elements:
   - Analog input of ultrasonic sensors
   - Analog output to controll two servo motors
   - Analog output to controll the speaker(X
-  - Digital output of leds
-  - A pole
+  - Digital output of leds(x
+  - A pole -> Hot glue stick
   - Four ultrasonic sensors -> Four IR distance sensors (2022/05/05)
-  - Two servo motors(continuous rotation)
+  - Two servo motors(continuous rotation) -> two micro servo motors
   - Bread board and circuts
   - A speaker(X
-  - Some leds
+  - Some leds(X
 
 ## P5js Progress:
 (2022/04/26)
@@ -35,6 +35,9 @@ I did the basic data spliting and reading from the Arduino end, and I decided to
 
 (2022/05/10)
 I now can get the serial input from the arduino properly, and I decided to change the color display into the area of four colored bars on four edges of the window. In this way, there will be more interaction between the user and the device. However, I am struggling with the mapping just like the problems I faced when building up the Arduino system. I am thinking of changing the inputs from the Arduino through an equation to map them more precisely, or maybe I will pick up the same startegy as what I did to my Arduino, which is to alter the variables that control the area boundaries a bit at a time.
+
+(2022/05/10)
+I adjusted the code to another method instead of mapping the serial inputs to other variables in p5. I changed the mapping into comparing the previos readings from the serial to the new readings, and increase or decrease the lighting area of the pixels according to the difference of the two readings.
 
 ## Arduino Progress:
 (2022/04/26)
