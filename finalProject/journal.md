@@ -78,4 +78,85 @@ For the Sharp IR distance sensors model GP2Y0A02YK0F, I found several zip librar
 Following is the link: (https://github.com/guillaume-rico/SharpIR)
 This basically fix all my problems of interpreting the analog input I get from the sensors into the distacnce unit of cenimeters. The other problem regarding the sensors is that two out of four sesors always return very unstable values, and I guessed they might be affected the noises when connecting Arduino as a controller and a power source at the same time. So, I borrowed a 5v power plug from the IM lab, and power the device directly from the external source. After doing this, the values returned by all four sensors are a lot more stable. To make the returned values even more stable, I added a capacitor to the circuit, implied a smoothing method to my Arduino code to smooth the values collected by the sensors by taking the averages of ten values, and added a delay(1) to stable the readings while not stopping the code for too long.
 
+Here is the smoothing process:
+```
+const int numReadings = 100; // the number of taking how many readings to get the average to smooth
+
+int readingsFront[numReadings];      // the readings from the analog input
+int readingsRight[numReadings];
+int readingsBack[numReadings];
+int readingsLeft[numReadings];
+int readIndex = 0;              // the index of the current reading
+int totalFront = 0;                  // the running total
+int totalRight = 0;
+int totalBack = 0;
+int totalLeft = 0;
+int averageFront = 0;                // the average
+int averageRight = 0;
+int averageBack = 0;
+int averageLeft = 0;
+
+for (int thisReading = 0; thisReading < numReadings; thisReading++) { // setup all the data in the array to 0
+readingsFront[thisReading] = 0;
+readingsRight[thisReading] = 0;
+readingsBack[thisReading] = 0;
+readingsLeft[thisReading] = 0;
+}
+
+if(sensorFront > 150){ // the data that are outside 20-150 range will be rounded into this range to keep the dataset smooth
+sensorFront = 150;
+}
+if(sensorRight > 150){
+sensorRight = 150;
+}
+if(sensorBack > 150){
+sensorBack = 150;
+}
+if(sensorLeft > 150){
+sensorLeft = 150;
+}
+if(sensorFront < 20){
+sensorFront = 20;
+}
+if(sensorRight < 20){
+sensorRight = 20;
+}
+if(sensorBack < 20){
+sensorBack = 20;
+}
+if(sensorLeft < 20){
+sensorLeft = 20;
+}
+
+// subtract the last reading:
+totalFront = totalFront - readingsFront[readIndex];
+totalRight = totalRight - readingsRight[readIndex];
+totalBack = totalBack - readingsBack[readIndex];
+totalLeft = totalLeft - readingsLeft[readIndex];
+// read from the sensor:
+readingsFront[readIndex] = sensorFront;
+readingsRight[readIndex] = sensorRight;
+readingsBack[readIndex] = sensorBack;
+readingsLeft[readIndex] = sensorLeft;
+// add the reading to the total:
+totalFront = totalFront + readingsFront[readIndex];
+totalRight = totalRight + readingsRight[readIndex];
+totalBack = totalBack + readingsBack[readIndex];
+totalLeft = totalLeft + readingsLeft[readIndex];
+// advance to the next position in the array:
+readIndex++;
+
+// if we're at the end of the array...
+if (readIndex >= numReadings) {
+// ...wrap around to the beginning:
+readIndex = 0;
+}
+
+// calculate the average:
+averageFront = totalFront / numReadings;
+averageRight = totalRight / numReadings;
+averageBack = totalBack / numReadings;
+averageLeft = totalLeft / numReadings;
+// send it to the computer as ASCII digits
+  ```
 
