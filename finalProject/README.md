@@ -16,6 +16,10 @@ In this project, two micro servo motors and four Sharp IR distance sensors are i
 For the P5.js end, I decide to use pixel as my display method to create the glitch effect. The four bars growing from four edges are displayed by a single function, and the areas of them are decided by the always updating position variables that are controlled by the serial input from the Arduino end. 
 
 ## User Testing:
+- User test 1: (https://youtu.be/NgyO99n5pWI)
+- User test 2: (https://youtu.be/W-FqSBCVuVM)
+- User test 3: (https://youtu.be/fM7WPYMcwfE)
+- User test 4: (https://youtu.be/_jcF8elSU9E)
 
 ## Problems, Solutions, and Discoveries:
 During the process, I bumped into several problems. On the Arduino end, I had problems of motors, noises amoung sensors, and smoothing the dataset. On the P5.js end, I encounter problems of how to display the pixels in the specific way I want. For the motors, I accidentally used the continuous rotation motors in the beginning without noticing, and the solution is just to change them into micro servo motors that came with the kit. After that I found two of my sensors are not generating stable data, and professor suggested me to add a capacitor to the circuit and use a 5V external power source instead. Lastly, to smooth. the dataset better, I collect 100 data and take their average as the data I am using, so the outstanding data will be smoothed. On the P5.js end, I spent a while to figure out why the pixels are not displaying the way I want. When I am trying to fill the pixel from the row 360 to the row 400 by assigning the mapped variable to the pixel array, the system will not fill up the later pixels after the variable. So, I realized I sould fill the pixels from the edge backward to the variable I mapped.
