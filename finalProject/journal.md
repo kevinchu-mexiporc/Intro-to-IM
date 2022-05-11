@@ -38,7 +38,37 @@ I now can get the serial input from the arduino properly, and I decided to chang
 
 (2022/05/10)
 I adjusted the code to another method instead of mapping the serial inputs to other variables in p5. I changed the mapping into comparing the previos readings from the serial to the new readings, and increase or decrease the lighting area of the pixels according to the difference of the two readings.
-
+Here is the code:
+```
+if(frontNew - frontOld > 3 && frontPos < 200){
+  frontPos = frontPos + 10;
+}
+else if(frontNew - frontOld < -3 && frontPos > 40){
+  frontPos = frontPos - 3;
+}
+if(rightNew - rightOld > 3 && rightPos > 200){
+  rightPos = rightPos - 10;
+}
+else if(rightNew - rightOld < -3 && rightPos < 360){
+  rightPos = rightPos + 3;
+}
+if(backNew - backOld > 3 && backPos > 200){
+   backPos = backPos - 3;
+}
+else if(backNew - backOld < -3 && backPos < 360){
+  backPos = backPos + 10;
+}
+if(leftNew - leftOld > 3 && leftPos < 200){
+   leftPos = leftPos + 10;
+}
+else if(leftNew - leftOld < -3 && leftPos > 40){
+   leftPos = leftPos - 3;
+}
+frontOld = frontNew;
+rightOld = rightNew;
+backOld = backNew;
+leftOld = leftNew;
+```
 (2022/05/10)
 The previous method of increasing or decreasing the lighting area of the pixels according to the difference of the two readings still have some glitches at the right and back edges. Those two bar areas of pixels sometimes even do not show at all. I later tried to use ```rotate()``` to see if I can start to fill up the pixel array in four different directions, but the idea failed. In the end, I figured out I should fill the pixel backward instead of in order to make sure the last parts of the array will always be filled up despite any scenario as I show in the followong code.
 ```
